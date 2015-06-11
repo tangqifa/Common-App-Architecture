@@ -45,7 +45,7 @@ public class ClassroomDataSource implements IDataSource<List<ClassroomItem>> {
 
     private List<ClassroomItem> loadData(int page) throws Exception {
         // 这里用百度首页模拟网络请求，如果网路出错的话，直接抛异常不会执行后面的获取books的语句
-        HttpUtils.executeGet("http://www.baidu.com");
+        //HttpUtils.executeGet("http://www.baidu.com");
 
         List<ClassroomItem> ClassroomItems = new ArrayList<ClassroomItem>();
 
