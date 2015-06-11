@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="62dp"
+    android:background="@drawable/profile_item_background_selector">
+
+    <TextView
+        android:id="@+id/product_customer_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="12dp"
+        android:background="@color/product_state_tag_color"
+        android:padding="5dp"
+        android:text="已购买"
+        android:textColor="@color/action_bar_title_color"
+        android:textSize="@dimen/text_size_small" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="12dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/product_customer_alias"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:lines="1"
+            android:text="孙总"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/product_customer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:lines="1"
+            android:text="(孙悟空)"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/text_size_small" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/product_customer_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:lines="1"
+        android:text="激进型"
+        android:textColor="@color/common_text_color"
+        android:textSize="@dimen/text_size_small" />
+
+    <TextView
+        android:id="@+id/product_customer_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:lines="1"
+        android:text="持仓1000万"
+        android:textColor="@color/common_red_color"
+        android:textSize="@dimen/text_size_small" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="6dp">
+
+
+        <ImageButton
+            android:id="@+id/product_customer_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/product_customer_edit_background_selector" />
+
+        <TextView
+            android:id="@+id/product_customer_tips"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="-8dp"
+            android:layout_toRightOf="@id/product_customer_edit"
+            android:background="@drawable/textview_round_bg"
+            android:gravity="center"
+            android:textColor="@color/common_white_color" />
+    </RelativeLayout>
+
+
+    <ImageButton
+        android:id="@+id/product_customer_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/customer_phone_background_selector" />
+
+</LinearLayout>

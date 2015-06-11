@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="62dp"
+    android:background="@color/product_list_item_color">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="12dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/customer_alias"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="孙行者"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/text_size_mid" />
+
+        <TextView
+            android:id="@+id/customer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="(孙悟空)"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/text_size_mid" />
+
+
+        <ImageButton
+            android:id="@+id/customer_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/edit_button_background_selector" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/customer_risk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="一级风险"
+        android:textColor="@color/common_text_color"
+        android:textSize="@dimen/text_size_mid" />
+
+    <TextView
+        android:id="@+id/customer_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="先生"
+        android:textColor="@color/common_text_color"
+        android:textSize="@dimen/text_size_mid" />
+
+    <ImageButton
+        android:id="@+id/customer_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/customer_phone_background_selector" />
+
+</LinearLayout>

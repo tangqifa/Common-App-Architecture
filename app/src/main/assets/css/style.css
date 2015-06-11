@@ -1,0 +1,319 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, pre, form, p, blockquote, input, textarea, abbr, article, aside, figcaption, figure, footer, header, mark, meter, menu, nav, output, progress, section, summary, time {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html, body {
+    overflow-x: hidden;
+    word-wrap: break-word;
+}
+
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
+    -webkit-text-size-adjust: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+iframe, a, img, button {
+    border: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+a, a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+    overflow: hidden;
+}
+
+em, i, s {
+    font-style: normal;
+}
+
+input[type="submit"], input[type="button"], input[type="text"], input[type="password"], input[type="tel"], textarea, button, select {
+    font-size: 1em;
+    outline: 0;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+
+input:-webkit-input-placeholder {
+    color: #cecece;
+}
+
+input:-moz-placeholder, input::-moz-placeholder {
+    color: #cecece;
+}
+
+input:-ms-input-placeholder {
+    color: #cecece;
+}
+
+body {
+    font: 400 15px/1.5 "Helvetica Neue", Helvetica, STHeiTi, "Droid Sans Fallback", sans-serif;
+    color: #323a45;
+    overflow-x: hidden;
+    background-color: #dcdcdc;
+}
+
+a, button, input {
+    color: #343434;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.space {
+    height: 0.8em;
+}
+
+/*product detail style*/
+.product-detail h2.title {
+    font-size: 1em;
+    line-height: 2.5;
+}
+
+/*marketing guide*/
+.product-detail .market-guide-wrapper {
+    background-color: #fff;
+    padding: 0.6em 0;
+}
+
+.product-detail .market-guide-wrapper .market-guide a:link, .product-detail .market-guide-wrapper .market-guide a:visited, .product-detail .market-guide-wrapper .market-guide a:active {
+    color: #323a45;
+}
+
+.product-detail .market-guide-wrapper .market-guide .title {
+    position: relative;
+}
+
+.product-detail .market-guide-wrapper .market-guide .arrow {
+    width: 0.6em;
+    height: 0.6em;
+    border-width: 2px 2px 0 0;
+    border-color: #323a45;
+    border-style: solid;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -0.22em;
+
+    /* Safari */
+    -webkit-transform: rotate(45deg);
+
+    /* Firefox */
+    -moz-transform: rotate(45deg);
+
+    /* IE */
+    -ms-transform: rotate(45deg);
+
+    /* Opera */
+    -o-transform: rotate(45deg);
+
+    /* Newer browsers (incl IE9) */
+    transform: rotate(45deg);
+}
+
+.product-detail .product-elements-wrapper {
+    background-color: #fff;
+    padding: 0.7em 0 1.3em;
+}
+
+.product-detail .market-guide, .product-detail .product-elements-subwrapper {
+    margin: 0 1.5em;
+}
+
+.product-detail .product-elements-wrapper .product-elements-subwrapper .product-elements-inner {
+    overflow-y: scroll;
+}
+
+.product-detail .product-elements-subwrapper .title {
+    padding-bottom: 0.6em;
+}
+
+.product-detail .product-elements-subwrapper .product-elements {
+    margin: 0;
+    width: 100%;
+    color: #666666;
+    font-size: 0.8em;
+}
+
+.product-detail .product-elements-subwrapper .product-elements tr:first-child {
+    border-top: 1px solid #5f5f5f;
+
+}
+
+.product-detail .product-elements-subwrapper .product-elements tr {
+    border-bottom: 1px solid #5f5f5f;
+}
+
+.product-detail .product-elements-subwrapper .product-elements tr td {
+    padding: 0.5em 0;
+}
+
+.product-detail .product-elements-subwrapper .product-elements tr td.odd {
+    width: 10em;
+    color: #121212;
+}
+
+.product-detail .product-elements-subwrapper .product-elements tr td.even {
+    text-align: justify;
+    word-break: break-all;
+    color: #5a5a5a;
+}
+
+/*marketing guide detail*/
+
+.market-guide-detail {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0.8em 1em;
+    text-align: justify;
+}
+
+/*performance style*/
+.performance .client-manager {
+    margin: 2em 1.5em;
+}
+
+.performance .client-manager .name {
+    font-size: 1.1em;
+    color: #34474f;
+}
+
+.performance .client-manager .id-num {
+    font-size: 0.8em;
+    color: #738f9d;
+}
+
+.performance .data {
+    color: #34474f;
+    font-size: 0.9em;
+    margin: 1em 1.5em 1em;
+}
+
+.performance .data .data-lists {
+    padding: 1em 0;
+    border-bottom: 1px solid #F0EDED;
+}
+
+.performance .data .data-lists:last-child {
+    border-bottom: 0;
+}
+
+.performance .data table {
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.performance .data table td {
+    border-right: 1px solid #F0EDED;
+}
+
+.performance .data table td:last-child {
+    border-right: 0;
+}
+
+.performance .data table td.name {
+    width: 36%;
+    text-align: justify;
+    padding-right: 0.5em;
+}
+
+.performance .data table td.time {
+    width: 20%;
+}
+
+.performance .data table td.time span {
+    margin-right: 0.3em;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("../images/Clock.png") no-repeat center 4px;
+    background-size: 80%;
+}
+
+.performance .data table td.number {
+    width: 15%;
+    padding: 0 0.5em;
+}
+
+.performance .data table td.total {
+    width: 20%;
+    text-align: right;
+}
+
+#chartContainer {
+    margin: 0 1em;
+}
+
+/*class detail style*/
+.class-detail {
+    margin: 1.2em 1.5em;
+    color: #323a45;
+}
+
+.class-detail .title {
+    color: #323a45;
+    font-size: 1.2em;
+    margin-bottom: 0.8em;
+    font-weight: bolder;
+
+}
+
+.class-detail p.time {
+    line-height: 2;
+    font-size: 0.9em;
+}
+
+.class-detail .content {
+    font-size: 1em;
+}
+
+.class-detail .content .subtitle {
+    line-height: 2.5;
+    font-weight: bolder;
+}
+
+.class-detail .content p {
+    line-height: 1.5;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+/*pc桌面查看网页样式*/
+@media screen and (min-width: 1024px) {
+    body {
+        width: 900px;
+        margin: 0 auto !important;
+        font-size: 16px;
+    }
+
+}

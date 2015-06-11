@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/action_bar" />
+
+    <EditText
+        android:id="@+id/note_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_margin="20dp"
+        android:background="@color/common_white_color"
+        android:hint="备注"
+        android:padding="10dp"
+        android:gravity="top|left|center"
+        android:textColor="@color/edit_normal_text_color"
+        android:textColorHint="@color/edit_hint_text_color"
+        android:textCursorDrawable="@null"
+        android:textSize="15sp" />
+
+
+    <Button
+        android:id="@+id/submit_btn"
+        style="@style/ButtonBackgroundSelector"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="提交" />
+
+
+</LinearLayout>
+

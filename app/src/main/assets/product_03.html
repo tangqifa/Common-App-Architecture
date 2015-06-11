@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta name="author" content="www.tongbaotu.com">
+    <title>产品详情</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+<section class="product-detail">
+    <section class="market-guide-wrapper">
+        <section class="market-guide">
+            <a href="marketGuideDetai_empty.html">
+                <h2 class="title">营销指引<span class="arrow">&nbsp;</span>
+                </h2>
+            </a>
+        </section>
+    </section>
+    <section class="space">&nbsp;</section>
+    <section class="product-elements-wrapper">
+        <section class="product-elements-subwrapper">
+            <h2 class="title">产品要素</h2>
+            <section class="product-elements-inner">
+                <table class="product-elements">
+                    <tbody>
+                    <tr>
+                        <td class="odd">产品名称</td>
+                        <td class="even">民生银行-非凡资产管理智赢1号</td>
+                    </tr>
+                    <tr>
+                        <td class="odd">产品类型</td>
+                        <td class="even">债权型</td>
+                    </tr>
+                    <tr>
+                        <td class="odd">本金币种</td>
+                        <td class="even">人民币</td>
+                    </tr>
+                    <tr>
+                        <td class="odd">收益类型</td>
+                        <td class="even">非保本浮动收益型</td>
+                    </tr>
+                    <tr>
+                        <td class="odd">起始日</td>
+                        <td class="even">2015.05.20</td>
+                    </tr>
+                    <tr>
+                        <td class="odd">到期日</td>
+                        <td class="even">2016.02.24</td>
+                    </tr>
+                    <tr>
+                        <td class="odd">预期收益</td>
+                        <td class="even">5.75%</td>
+                    </tr>
+                    <tr>
+                        <td class="odd">收益计算基础</td>
+                        <td class="even">Act360</td>
+                    </tr>
+                    <tr>
+                        <td class="odd">分红周期与结算</td>
+                        <td class="even">到期一次性还本付息</td>
+                    </tr>
+                    <tr>
+                        <td class="odd">投资方式</td>
+                        <td class="even">投资于**信托股份有限公司的资金信托计划。</td>
+                    </tr>
+                    <tr>
+                        <td class="odd">风险等级</td>
+                        <td class="even">2级</td>
+                    </tr>
+                    <tr>
+                        <td class="odd">主要风险</td>
+                        <td class="even">信托计划的融资方</td>
+                    </tr>
+                    <tr>
+                        <td class="odd">认购金额起点</td>
+                        <td class="even">100万元</td>
+                    </tr>
+                    <tr>
+                        <td class="odd">金额递增单位</td>
+                        <td class="even">10万元</td>
+                    </tr>
+                    <tr>
+                        <td class="odd">单一投资人申购上限</td>
+                        <td class="even">1000万元</td>
+                    </tr>
+                    <tr>
+                        <td class="odd">募集金额上限</td>
+                        <td class="even">15000万元</td>
+                    </tr>
+                    <tr>
+                        <td class="odd">募集开始日</td>
+                        <td class="even">2015.05.01</td>
+                    </tr>
+                    <tr>
+                        <td class="odd">募集结束日</td>
+                        <td class="even">2015.05.19</td>
+                    </tr>
+                    <tr>
+                        <td class="odd">销售对象</td>
+                        <td class="even">个人客户与机构客户</td>
+                    </tr>
+                    <tr>
+                        <td class="odd">特别约定</td>
+                        <td class="even">暂无</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+    </section>
+</section>
+<script src="js/zepto.min.js"></script>
+<!--<script src="js/event.js"></script>-->
+<!--<script src="js/touch.js"></script>-->
+<!--<script src="js/fx.js"></script>-->
+<script>
+    $(function () {
+        var window_height = $(window).height();
+        var market_guide_height = $(".market-guide-wrapper").height();
+        var title_height = $(".product-elements-subwrapper .title").height();
+        var space = $(".space").height();
+
+        var inner_height = window_height - market_guide_height - title_height - space-30;
+        $(".product-elements-inner").height(inner_height);
+    })
+</script>
+</body>
+</html>

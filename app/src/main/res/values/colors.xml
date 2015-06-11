@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--应用背景颜色-->
+    <color name="app_background_color">#d2d2d2</color>
+    <!--我的tab分割线颜色-->
+    <color name="app_carve_line_color">#dcdcdc</color>
+    <!--标题栏-->
+    <color name="action_bar_background_color">#323a45</color>
+    <color name="action_bar_title_color">@color/common_white_color</color>
+    <!--通用文字颜色-->
+    <color name="common_white_color">#ffffff</color>
+    <color name="common_text_color">@color/action_bar_background_color</color>
+    <color name="common_text_sub_color">#656565</color>
+    <color name="common_button_color">@color/action_bar_title_color</color>
+    <!--按钮-->
+    <color name="button_normal_background_color">#8c91ff</color>
+    <color name="button_focus_background_color">#9c91ff</color>
+    <!--编辑框-->
+    <color name="edit_normal_text_color">#7b8392</color>
+    <color name="edit_hint_text_color">#cacdd3</color>
+    <!--忘记密码文案-->
+    <color name="forget_password_text_color">@color/edit_normal_text_color</color>
+    <!--tab相关-->
+    <color name="tab_main_text_1">@color/action_bar_title_color</color>
+    <color name="tab_main_text_2">@color/button_normal_background_color</color>
+    <color name="tab_main_normal_background_color">@color/action_bar_background_color</color>
+    <color name="tab_main_selected_background_color">#414956</color>
+    <color name="tab_top_text_1">@color/action_bar_title_color</color>
+    <color name="tab_top_text_2">@color/button_normal_background_color</color>
+
+    <color name="classroom_list_item_normal_color">#f8f8f8</color>
+    <color name="classroom_list_item_pressed_color">#f8f8f8</color>
+
+    <color name="product_detail_button_normal_color">#7e83d5</color>
+    <color name="product_detail_button_pressed_color">#9598ff</color>
+    <color name="product_list_button_normal_color">#00d8ff</color>
+    <color name="product_list_button_pressed_color">#00b3d3</color>
+    <color name="product_notice_button_normal_color">#ff1b7c</color>
+    <color name="product_notice_button_pressed_color">#ff1b9c</color>
+    <color name="product_state_tag_color">@color/product_detail_button_pressed_color</color>
+    <color name="product_list_item_color">#f8f8f8</color>
+    <color name="product_list_item_text_color">#656565</color>
+    <color name="product_list_item_red_color">#ff1b7c</color>
+    <color name="dot_note_red_color">#ff1b7c</color>
+    <color name="common_red_color">#ff1a7b</color>
+</resources>

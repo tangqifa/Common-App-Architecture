@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="68dp"
+    android:background="@drawable/profile_item_background_selector">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/classroom_list_item_title"
+            style="@style/ProfileItemTitle"
+            android:layout_alignParentLeft="true"
+            android:text="标题" />
+
+        <TextView
+            android:id="@+id/classroom_list_item_date"
+            style="@style/ProfileItemTitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:text="2015.05.01"
+            android:textColor="@color/edit_hint_text_color" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="26dp"
+        android:src="@mipmap/right_arrow" />
+
+</RelativeLayout>

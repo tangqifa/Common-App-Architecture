@@ -1,0 +1,70 @@
+<resources>
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.NoActionBar">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowBackground">@color/app_background_color</item>
+    </style>
+
+    <style name="ActionBar">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/action_bar_height</item>
+        <item name="android:background">@color/action_bar_background_color</item>
+
+    </style>
+
+    <style name="ActionBarButton">
+        <item name="android:background">@drawable/action_bar_button_background_selector</item>
+        <item name="android:layout_width">@dimen/action_bar_width</item>
+        <item name="android:layout_height">@dimen/action_bar_height</item>
+    </style>
+
+
+    <style name="ActionBarTitle">
+        <item name="android:textSize">@dimen/action_bar_title_size</item>
+        <item name="android:textColor">@color/action_bar_title_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="ProfileItemTitle">
+        <item name="android:textSize">@dimen/text_size_mid</item>
+        <item name="android:textColor">@color/action_bar_background_color</item>
+        <item name="android:text">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">20dp</item>
+        <item name="android:paddingLeft">26dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="ProfileItemValue" parent="ProfileItemTitle">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">26dp</item>
+
+    </style>
+
+    <style name="ButtonBackgroundSelector">
+        <item name="android:textSize">@dimen/text_size_big</item>
+        <item name="android:textColor">@color/action_bar_title_color</item>
+        <item name="android:text">bold</item>
+        <item name="android:background">@drawable/button_background_selector</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">56dp</item>
+    </style>
+    <style name="ProfileItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:onClick">onClickMethod</item>
+        <item name="android:background">@drawable/profile_item_background_selector</item>
+    </style>
+    <style name="ProfileItemSub">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:background">@color/action_bar_title_color</item>
+    </style>
+</resources>

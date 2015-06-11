@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/action_bar" />
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/profile_info_name"
+                style="@style/ProfileItemSub"
+                android:clickable="false">
+
+                <TextView
+                    style="@style/ProfileItemTitle"
+                    android:layout_alignParentLeft="true"
+                    android:text="客户经理姓名" />
+
+                <TextView
+                    style="@style/ProfileItemValue"
+                    android:layout_alignParentRight="true"
+                    android:text="王哲" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/app_carve_line_color" />
+
+
+            <RelativeLayout
+                android:id="@+id/profile_inf_location"
+                style="@style/ProfileItemSub"
+                android:clickable="false">
+
+                <TextView
+                    style="@style/ProfileItemTitle"
+                    android:layout_alignParentLeft="true"
+                    android:text="所属银行" />
+
+                <TextView
+                    style="@style/ProfileItemValue"
+                    android:layout_alignParentRight="true"
+                    android:text="洛阳银行" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/app_carve_line_color" />
+
+            <RelativeLayout
+                android:id="@+id/profile_info_department"
+                style="@style/ProfileItemSub"
+                android:clickable="false">
+
+                <TextView
+                    style="@style/ProfileItemTitle"
+                    android:layout_alignParentLeft="true"
+                    android:text="所属网点" />
+
+                <TextView
+                    style="@style/ProfileItemValue"
+                    android:layout_alignParentRight="true"
+                    android:text="洛阳" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/app_carve_line_color" />
+
+            <RelativeLayout
+                android:id="@+id/profile_info_bank"
+                style="@style/ProfileItemSub"
+                android:clickable="false">
+
+                <TextView
+                    style="@style/ProfileItemTitle"
+                    android:layout_alignParentLeft="true"
+                    android:text="部门" />
+
+                <TextView
+                    style="@style/ProfileItemValue"
+                    android:layout_alignParentRight="true"
+                    android:text="市场" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/app_carve_line_color" />
+
+            <RelativeLayout
+                android:id="@+id/profile_info_postion"
+                style="@style/ProfileItemSub"
+                android:clickable="false">
+
+                <TextView
+                    style="@style/ProfileItemTitle"
+                    android:layout_alignParentLeft="true"
+                    android:text="职务" />
+
+                <TextView
+                    style="@style/ProfileItemValue"
+                    android:layout_alignParentRight="true"
+                    android:text="经理" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
+

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta name="author" content="www.tongbaotu.com">
+    <title>绩效</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+<section class="performance">
+    <section class="client-manager">
+        <h1 class="name">王哲</h1>
+
+        <p class="id-num">ID:45758915</p>
+    </section>
+
+    <section class="graph" id="chartContainer" style="height: 300px; width: 100%;">
+
+    </section>
+    <section class="data">
+        <section class="data-lists">
+            <table>
+                <tbody>
+                <tr>
+                    <td class="name">民生银行-非凡资产管理180天增利第345期</td>
+                    <td class="time"><span>&nbsp;</span>180天</td>
+                    <td class="number">7笔</td>
+                    <td class="total">共3400万</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="data-lists">
+            <table>
+                <tbody>
+                <tr>
+                    <td class="name">民生银行-非凡净值系列产品438号</td>
+                    <td class="time"><span>&nbsp;</span>365天</td>
+                    <td class="number">6笔</td>
+                    <td class="total">共6800万</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="data-lists">
+            <table>
+                <tbody>
+                <tr>
+                    <td class="name">民生银行-非凡资产管理智赢1号</td>
+                    <td class="time"><span>&nbsp;</span>280天</td>
+                    <td class="number">9笔</td>
+                    <td class="total">共5270万</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="data-lists">
+            <table>
+                <tbody>
+                <tr>
+                    <td class="name">北京银行-“心喜”系列2015年第301期人民币9个月信托债券非保本理财产品</td>
+                    <td class="time"><span>&nbsp;</span>274天</td>
+                    <td class="number">10笔</td>
+                    <td class="total">共4600万</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="data-lists">
+            <table>
+                <tbody>
+                <tr>
+                    <td class="name">北京银行-人民币“天天盈”562 号非保本浮动收益理财产品</td>
+                    <td class="time"><span>&nbsp;</span>180天</td>
+                    <td class="number">5笔</td>
+                    <td class="total">共3800万</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+    </section>
+</section>
+<script src="js/echarts-all.js"></script>
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echarts图表
+    var myChart = echarts.init(document.getElementById('chartContainer'));
+
+    var option = {
+        tooltip: {
+            show: false,
+            trigger: 'axis'
+        },
+        title: {
+            x: 'center',
+            y: 0,
+            text: '25',
+            textStyle: {color: "#34474f", fontSize: 26}
+        },
+        toolbox: {
+            show: false
+        },
+        grid: {
+            x: 40,
+            y: 40,
+            x2: 40,
+            y2: 40,
+            borderWidth: 0
+        },
+        xAxis: [
+            {
+                type: 'category',
+                axisLine: {lineStyle: {color: "#F0EDED", width: 1}},
+                axisTick: {show: false},
+                axisLabel: {
+                    interval: 0,
+                    textStyle: {color: "#34474f"}
+                },
+                splitLine: {show: false},
+                splitArea: {show: false},
+                data: ['05-04', '05-05', '05-06', '05-07', '05-08', '05-09', '05-10']
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value',
+                axisLine: {lineStyle: {color: "#dcdcdc", width: 1}},
+                axisLabel: {
+                    textStyle: {color: "#34474f"},
+                    formatter: '{value} 笔'
+                },
+                splitLine: {show: true, lineStyle: {color: "#F0EDED"}},
+                splitArea: {show: false},
+                splitNumber: 4,
+                max: 12,
+                min: 0
+            }
+        ],
+        series: [
+            {
+                type: 'line',
+                smooth: false,
+                barWidth: 6,
+                itemStyle: {
+                    normal: {
+                        color: "#ff4c79"
+                    }
+                },
+                data: [2, 1, 4, 10, 3, 4, 1]
+            }
+        ]
+    };
+
+    // 为echarts对象加载数据
+    myChart.setOption(option);
+
+</script>
+</body>
+</html>
