@@ -18,16 +18,15 @@ package com.shizhefei.view.listviewhelper;
 import android.widget.ListAdapter;
 
 /**
- * @author LuckyJayce
- *
  * @param <DATA>
+ * @author LuckyJayce
  */
 public interface IDataAdapter<DATA> extends ListAdapter {
 
-	public abstract void setData(DATA data, boolean isRefresh);
+    public abstract void setData(DATA data, boolean isRefresh);
 
-	public abstract DATA getData();
+    public abstract DATA getData();
 
-	public void notifyDataSetChanged();
+    public void notifyDataSetChanged();
 
 }

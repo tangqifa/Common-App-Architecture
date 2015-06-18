@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:divider="@color/app_carve_line_color"
     android:dividerHeight="1dp"
-    ptr:ptrHeaderBackground="@android:color/darker_gray"
-    ptr:ptrHeaderTextColor="@android:color/white"
+    ptr:ptrHeaderBackground="@color/app_background_color"
+    ptr:ptrHeaderTextColor="@color/common_white_color"
+    ptr:ptrAnimationStyle="flip"
     ptr:ptrMode="both" />
